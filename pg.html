@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Tech Age Verification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('CTJE4QBC77U0AD0POMIG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+  
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #00C9FF; /* Electric blue for a vibrant, energetic background */
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        color: #00E676; /* Lime green for text, vibrant and striking */
+    }
+
+    h1, p, .timer, .time, .btn, footer, .footer-link a {
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #00E676; /* Lime green for headers, dynamic and eye-catching */
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.8em;
+        margin: 10px 0;
+        color: #FFFFFF; /* White for body text, for clarity and contrast */
+    }
+
+    .timer {
+        font-size: 2em;
+        margin: 20px 0;
+        color: #FFFFFF; /* White for the timer, clear and visible */
+    }
+
+    .time {
+        color: #FFFFFF; /* Matching the timer color */
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.8em;
+        color: #00C9FF; /* Electric blue text for contrast */
+        background-color: #00E676; /* Lime green for buttons, inviting and bold */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        background-color: #02C39A; /* A deeper shade of green for hover, adding depth */
+    }
+
+    footer {
+        width: 100%;
+        background-color: #007BFF; /* Deeper shade of blue to complement the body */
+        color: #00E676; /* Lime green for footer text, maintaining the vibrant theme */
+        padding: 20px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .footer-link a {
+        color: #FFFFFF; /* White for links, maintaining visibility and contrast */
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Age Verification</h1>
+    <p>Please verify your age to continue.</p>
+    <div class="timer">
+        Time left: <span class="time" id="time">0:15</span>
+    </div>
+    <a href="https://wr.thewell-being.online/2nmkh5johs/" class="btn" id="proceedButton">Proceed</a>
+
+    <footer id="footer">
+        <div class="footer-link">
+            <a href="https://page1.thegoodhealht.online/privacy-policy/">Privacy Policy</a> |
+            <a href="https://page1.thegoodhealht.online/terms/">Terms of Use</a> |
+            <a href="https://page1.thegoodhealht.online/contact/">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        var time = 15;
+        var timerElement = document.getElementById('time');
+        var interval = setInterval(function() {
+            var minutes = Math.floor(time / 60);
+            var seconds = time % 60;
+            timerElement.textContent = minutes + ':' + (seconds < 10 ? '0' + seconds : seconds);
+            time--;
+
+            if (time <= 0) {
+                clearInterval(interval);
+                timerElement.textContent = "Time expired";
+                timerElement.style.color = "#FF1744"; /* Adding a red color for expiration alert */
+            }
+        }, 1000);
+
+        setTimeout(() => {
+            document.getElementById('footer').style.display = 'block';
+        }, 1800000); // Delay footer visibility for 30 minutes
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var proceedButton = document.getElementById('proceedButton');
+        if (!proceedButton) {
+            console.error('O botão não foi encontrado no documento.');
+            return;
+        }
+
+        if (urlParams.toString() === "") {
+            console.error('Nenhum parâmetro foi passado para a página.');
+            // Aqui você pode optar por redirecionar para uma página de erro ou exibir uma mensagem
+            return;
+        }
+
+        var baseUrl = proceedButton.href;
+        baseUrl += baseUrl.includes('?') ? '&' : '?';
+        urlParams.forEach(function(value, key) {
+            baseUrl += encodeURIComponent(key) + '=' + encodeURIComponent(value) + '&';
+        });
+        baseUrl = baseUrl.slice(0, -1);
+        proceedButton.href = baseUrl;
+        console.log("URL final do botão:", proceedButton.href);
+    });
+    </script>
+</body>
+</html>
